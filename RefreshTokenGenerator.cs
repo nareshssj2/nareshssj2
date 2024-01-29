@@ -19,6 +19,7 @@ namespace JWT_WEBAPI
         public string GenerateToken(string username)
         {
             var randomnumber = new byte[32];
+            var name = "naresh";
             using (var randomnumbergenerator=RandomNumberGenerator.Create())
             {
                 randomnumbergenerator.GetBytes(randomnumber);
